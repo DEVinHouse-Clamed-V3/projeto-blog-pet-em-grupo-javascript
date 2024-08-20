@@ -93,7 +93,8 @@ button.delete-btn:hover {
 
 
 
-/* CSS Tela Home Posts */
+/*#region*/ css tela-home 
+/*#endregion*/
 
 
 .container-post-header {
@@ -158,6 +159,4 @@ button.delete-btn:hover {
     padding: 20px;
     background-color: #FFFFFF;
     box-shadow: 0 -10px 15px rgba(0, 0, 0, 0.15);
-/* box-shadow: horizontal vertical blur radius optional spread radius color; */
-
 }
