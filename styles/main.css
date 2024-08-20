@@ -1,20 +1,11 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f8ff;
+    background-color: #FAFAFB;
     margin: 0;
     padding: 0;
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.container {
-    background-color: #e6f2ff;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    align-items: center; */
 }
 
 h1 {
@@ -32,9 +23,7 @@ h1 {
     margin-bottom: 5px;
 }
 
-.form-group input, 
-.form-group textarea, 
-.form-group select {
+.form-group input, textarea, select {
     width: 100%;
     padding: 8px;
     border: 1px solid #b3d1ff;
@@ -42,7 +31,7 @@ h1 {
     box-sizing: border-box;
 }
 
-button {
+.form-group button {
     width: 100%;
     padding: 10px;
     background-color: #0073e6;
@@ -52,7 +41,7 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+.form-group button:hover {
     background-color: #005bb5;
 }
 
@@ -103,5 +92,71 @@ button.delete-btn:hover {
 }
 
 
-/* CSS menu */
 
+/*#region*/ css tela-home 
+/*#endregion*/
+
+
+.container-post-header {
+    background-color: #10274A;
+}
+
+.container-post-header header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #FFFFFF;
+    font-size: 20px;
+    padding: 0 80px;
+    /* margin top, right, bot, left */
+    /* padding top,right bot, left */
+}
+
+.container-post-header a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.container-post-nav {
+    background-color: #FFFFFF;
+    display: flex;
+    padding: 10px 50px;
+}    
+
+.nav-items {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.container-post-nav a {
+    text-decoration: none;
+    color: #555a6f;
+    font-size: 18px;
+}
+
+.nav-items li {
+    margin: 10px 25px 0 0;
+    
+}
+
+.container-post-nav .btn {
+    padding: 10px 20px;
+    background-color: #FA6357;
+    color: #FFFFFF;
+    text-align: center;
+    border-radius: 5px;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.container-post-nav .btn:hover {
+    background-color: #0056b3;
+}
+
+.container-posts {
+    padding: 20px;
+    background-color: #FFFFFF;
+    box-shadow: 0 -10px 15px rgba(0, 0, 0, 0.15);
+}
