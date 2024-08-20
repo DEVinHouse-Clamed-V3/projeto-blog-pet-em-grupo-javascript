@@ -92,6 +92,7 @@ button.delete-btn:hover {
 }
 
 
+
 /* CSS Tela Home Posts */
 
 
@@ -117,28 +118,46 @@ button.delete-btn:hover {
 
 .container-post-nav {
     background-color: #FFFFFF;
-}
-
-.container-post-nav ul {
-    list-style-type: none;
-    padding: 25px 80px;
-    margin: 0;
     display: flex;
-    align-items: center;
+    padding: 10px 50px;
+}    
+
+.nav-items {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
 }
 
 .container-post-nav a {
     text-decoration: none;
-    color: #555A6F;
+    color: #555a6f;
     font-size: 18px;
 }
 
-.container-post-nav li {
-    margin-right: 25px;
+.nav-items li {
+    margin: 10px 25px 0 0;
+    
 }
-
 
 .container-post-nav .btn {
+    padding: 10px 20px;
+    background-color: #FA6357;
+    color: #FFFFFF;
+    text-align: center;
+    border-radius: 5px;
     margin-left: auto;
+    cursor: pointer;
 }
 
+.container-post-nav .btn:hover {
+    background-color: #0056b3;
+}
+
+.container-posts {
+    padding: 20px;
+    background-color: #FFFFFF;
+    box-shadow: 0 -10px 15px rgba(0, 0, 0, 0.15);
+/* box-shadow: horizontal vertical blur radius optional spread radius color; */
+
+}
