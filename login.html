@@ -10,19 +10,24 @@
     <div class="page">
         
         <form method="POST" class="formLogin">
+            <div class="divh1">
             <h1>Login</h1>
+            </div>
             <p>Digite os seus dados de acesso no campo abaixo.</p>
             <label for="email">E-mail</label>
-            <input type="email" placeholder="Digite seu e-mail" autofocus="true" />
+            <input type="email" placeholder="Digite seu e-mail" autofocus="true" id="email"/>
             <label for="password">Senha</label>
-            <input type="password" placeholder="Digite sua senha" />
+            <input type="password" placeholder="Digite sua senha" id="password"/>
             
             <div class="formRow">
             <a href="/">Esqueci minha senha</a>
             <a href="/">Cadastre-se</a>
         </div>
-            <input type="submit" value="Acessar" class="btn" />
+            <input type="submit" value="Acessar" class="btn" onclick="acess(); return false"/>
         </form>
     </div>
+
+
+    <script src="scripts/login.js"></script>
 </body>
 </html>
