@@ -163,36 +163,44 @@ button.delete-btn:hover {
     font-weight: bold;
 }
 
-.content-footer {
-    background-color: #222;
-    text-align: center;
-    position: fixed;
-    /* bottom: 0; */
-}
-
-.content-footer .card {
-    background-color: #FFFFFF;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    padding: 30px 50px 50px;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.content-footer a {
-    background-color: #10274A;
-    color: #FFFFFF;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    border-radius: 4px;
-}
-
-.footer-blue::after {
+.footer-container {
+    position: relative;
+    background-color: #00234b; /* Blue background */
+    height: 160px; /* Adjust height as needed */
     width: 100%;
-    bottom: 0;
-    border-top: 1px solid #000;
-    border-bottom: 1px solid #000;
-    background-color: #ff4d4d;
+}
+
+.footer-card {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    background-color: #fff;
+    padding: 20px;
+    max-width: 50%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    
+}
+
+.footer-card h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.footer-card p {
+    margin: 10px 0;
+    color: #666;
+    font-size: 16px;
+}
+
+.footer-card a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00234b;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 10px;
 }
