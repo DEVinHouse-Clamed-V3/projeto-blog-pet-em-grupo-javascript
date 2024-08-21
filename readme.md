@@ -1,4 +1,4 @@
-![Logo](https://github.com/user-attachments/assets/a0812c62-d069-4002-8602-427d955b9b6d)
+![Logo](https://github.com/user-attachments/assets/7cf9c44f-ae82-4a74-9d6a-54751fc0d48a)
 # Blog de Pets
 
 Este projeto é parte do desafio proposto na semana 06 do Módulo 1 do programa DevInHouse LAB365, uma iniciativa do SENAI/SC em parceria com a CLAMED Farmácias. Nesta etapa, nossa equipe foi desafiada a desenvolver um blog dedicado a pets, aplicando os conhecimentos adquiridos até agora.
