@@ -1,11 +1,7 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #FAFAFB;
     margin: 0;
     padding: 0;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
 }
 
 h1 {
@@ -44,7 +40,6 @@ h1 {
 .form-group button:hover {
     background-color: #005bb5;
 }
-
 
 /* */
 
@@ -93,15 +88,15 @@ button.delete-btn:hover {
 
 
 
-/*#region*/ css tela-home 
+/*#region*/tela-home 
 /*#endregion*/
 
-
 .container-post-header {
-    background-color: #10274A;
+    display: flex;
 }
 
 .container-post-header header {
+    background-color: #10274A;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -156,7 +151,48 @@ button.delete-btn:hover {
 }
 
 .container-posts {
-    padding: 20px;
+    padding: 9px 50px;
     background-color: #FFFFFF;
     box-shadow: 0 -10px 15px rgba(0, 0, 0, 0.15);
+}
+
+.container-posts p {
+    margin: 0 0 20px 0;
+    font-size: 32px;
+    color: #111B37;
+    font-weight: bold;
+}
+
+.content-footer {
+    background-color: #222;
+    text-align: center;
+    position: fixed;
+    /* bottom: 0; */
+}
+
+.content-footer .card {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 30px 50px 50px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.content-footer a {
+    background-color: #10274A;
+    color: #FFFFFF;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 4px;
+}
+
+.footer-blue::after {
+    width: 100%;
+    bottom: 0;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    background-color: #ff4d4d;
 }
