@@ -6,7 +6,45 @@
   font-family: "Roboto", sans-serif;
 }
 
+html,
 body {
+  height: 100%;
+}
+
+.content {
+  /* Calcula o quanto o conteúdo vai ocupar para reservar um espaço para o footer*/
+  min-height: calc(100vh - 100px);
+}
+
+.container-content-header {
+  display: block;
+}
+
+.container-content-header header {
   background-color: #10274a;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   color: #ffffff;
+  font-size: 20px;
+  padding: 20px 80px;
+}
+
+.container-content-header a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.footer {
+  position: relative;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-container {
+  background-color: #00234b; /* Blue background */
+  height: 100px; /* Adjust height as needed */
+  width: 100%;
 }
