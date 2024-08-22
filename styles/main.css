@@ -173,7 +173,7 @@ body {
 
 .content {
   /* Calcula o quanto o conteúdo vai ocupar para reservar um espaço para o footer*/
-  min-height: calc(100vh - 100px);
+  min-height: calc(100vh - 150px);
 }
 
 .footer {
@@ -185,19 +185,18 @@ body {
 }
 
 .footer-container {
-  background-color: #00234b; /* Blue background */
-  height: 100px; /* Adjust height as needed */
+  background-color: #00234b; 
+  height: 150px;
   width: 100%;
 }
 
 .footer-card {
   background-color: #ffffff;
-  padding: 10px;
+  padding: 35px;
   max-width: 50%;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
+  border-radius: 5px;
   text-align: center;
-  border: 1px solid red;
   /* Aqui é feito posicionamento do card na camada de cima do footer e define quanto pixels ele vai ficar relativamente posicionado em relação ao footer */
   position: absolute;
   top: -90px;
@@ -206,12 +205,12 @@ body {
 .footer-card h2 {
   margin: 0;
   font-size: 24px;
-  color: #333;
+  color: #343565;
 }
 
 .footer-card p {
   margin: 10px 0;
-  color: #666;
+  color: #ADAEB1;
   font-size: 16px;
 }
 
@@ -221,6 +220,6 @@ body {
   background-color: #00234b;
   color: #fff;
   text-decoration: none;
-  border-radius: 4px;
-  margin-top: 5 px;
+  border-radius: 5px;
+  margin-top: 6px;
 }
