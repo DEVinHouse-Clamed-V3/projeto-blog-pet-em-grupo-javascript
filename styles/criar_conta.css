@@ -16,11 +16,11 @@ body {
   min-height: calc(100vh - 100px);
 }
 
-.container-content-header {
+.content-header-container {
   display: block;
 }
 
-.container-content-header header {
+.content-header-container header {
   background-color: #10274a;
   display: flex;
   align-items: center;
@@ -30,7 +30,7 @@ body {
   padding: 20px 80px;
 }
 
-.container-content-header a {
+.content-header-container a {
   text-decoration: none;
   color: #ffffff;
 }
