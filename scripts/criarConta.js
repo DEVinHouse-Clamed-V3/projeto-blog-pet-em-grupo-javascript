@@ -1,4 +1,6 @@
+console.log("entra no script");
 const userCreate = (event) => {
+  console.log("Entrou na função");
   // Previne que a página seja recarregada
   event.preventDefault();
 
@@ -12,6 +14,52 @@ const userCreate = (event) => {
   ).value;
   const userDescription = document.getElementById("user-description").value;
 
+  console.log(userName);
+  console.log(userPhoto);
+  console.log(userEmail);
+  console.log(userPassword);
+  console.log(userPasswordConfirmation);
+  console.log(userDescription);
+
+  //Verifica se os campos estão preenchidos, se não estiverem informa o usuário com uma mensagem no campo que não foi preenchido
+  if (!userName) {
+    document.getElementById("user-name-error").innerText =
+      "Nome é obrigatório!";
+  } else {
+    document.getElementById("user-name-error").innerText = "";
+  }
+  if (!userPhoto) {
+    document.getElementById("user-photo-error").innerText =
+      "Uma foto é obrigatória!";
+  } else {
+    document.getElementById("user-photo-error").innerText = "";
+  }
+  if (!userEmail) {
+    document.getElementById("user-email-error").innerText =
+      "O e-mail é obrigatório!";
+  } else {
+    document.getElementById("user-email-error").innerText = "";
+  }
+  if (!userPassword) {
+    document.getElementById("user-password-error").innerText =
+      "A senha é obrigatória!";
+  } else {
+    document.getElementById("user-password-error").innerText = "";
+  }
+  if (!userPasswordConfirmation) {
+    document.getElementById("user-password-confirmation-error").innerText =
+      "A confirmação da senha é obrigatória!";
+  } else {
+    document.getElementById("user-password-confirmation-error").innerText = "";
+  }
+  if (!userDescription) {
+    document.getElementById("user-description-error").innerText =
+      "A descrição é obrigatória!";
+  } else {
+    document.getElementById("user-description-error").innerText = "";
+  }
+
+  // Verifica se todos os campos estão preenchidos e após a validação adiciona eles a um objeto user
   if (
     userName &&
     userPhoto &&
@@ -42,47 +90,14 @@ const userCreate = (event) => {
 
     // Reseta os campos do formulário após terem sido enviados
     document.getElementById("user-create").reset();
-
-    if (!userName) {
-      document.getElementById("user-name-error").innerText =
-        "Nome é obrigatório!";
-    } else {
-      document.getElementById("user-name-error").innerText = "";
-    }
-    if (!userPhoto) {
-      document.getElementById("user-photo-error").innerText =
-        "Uma foto é obrigatória!";
-    } else {
-      document.getElementById("user-photo-error").innerText = "";
-    }
-    if (!userEmail) {
-      document.getElementById("user-email-error").innerText =
-        "O e-mail é obrigatório!";
-    } else {
-      document.getElementById("user-email-error").innerText = "";
-    }
-    if (!userPassword) {
-      document.getElementById("user-password-error").innerText =
-        "A senha é obrigatória!";
-    } else {
-      document.getElementById("user-password-error").innerText = "";
-    }
-    if (!userPasswordConfirmation) {
-      document.getElementById("user-password-confirmation-error").innerText =
-        "A confirmação da senha é obrigatória!";
-    } else {
-      document.getElementById("user-password-confirmation-error").innerText =
-        "";
-    }
-    if (!userDescription) {
-      document.getElementById("user-description-error").innerText =
-        "A descrição é obrigatória!";
-    } else {
-      document.getElementById("user-description-error").innerText = "";
-    }
   }
 };
 
 document
   .getElementById("user-create-form")
   .addEventListener("submit", userCreate);
+
+// Adiciona preview da imagem referente a url adicionada no campo do formulário correspondente
+document.getElementById("user-photo").addEventListener("input", function () {
+  document.getElementById("user-image").setAttribute("src", this.value);
+});
