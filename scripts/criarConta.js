@@ -14,13 +14,6 @@ const userCreate = (event) => {
   ).value;
   const userDescription = document.getElementById("user-description").value;
 
-  console.log(userName);
-  console.log(userPhoto);
-  console.log(userEmail);
-  console.log(userPassword);
-  console.log(userPasswordConfirmation);
-  console.log(userDescription);
-
   //Verifica se os campos estão preenchidos, se não estiverem informa o usuário com uma mensagem no campo que não foi preenchido
   if (!userName) {
     document.getElementById("user-name-error").innerText =
@@ -40,21 +33,21 @@ const userCreate = (event) => {
   } else {
     document.getElementById("user-email-error").innerText = "";
   }
-  if (!userPassword) {
+  if (userPassword.length < 8 || userPassword.length > 16) {
     document.getElementById("user-password-error").innerText =
-      "A senha é obrigatória!";
+      "A senha é obrigatória e deve conter entre 8 e 16 caracteres!";
   } else {
     document.getElementById("user-password-error").innerText = "";
   }
-  if (!userPasswordConfirmation) {
+  if (userPasswordConfirmation !== userPassword) {
     document.getElementById("user-password-confirmation-error").innerText =
-      "A confirmação da senha é obrigatória!";
+      "As senhas digitas são diferentes!";
   } else {
     document.getElementById("user-password-confirmation-error").innerText = "";
   }
-  if (!userDescription) {
+  if (!userDescription || userDescription.length > 300) {
     document.getElementById("user-description-error").innerText =
-      "A descrição é obrigatória!";
+      "A descrição é obrigatória e pode ter no máximo 300 caracteres!";
   } else {
     document.getElementById("user-description-error").innerText = "";
   }
@@ -89,15 +82,59 @@ const userCreate = (event) => {
     localStorage.setItem("users", JSON.stringify(localStorageList));
 
     // Reseta os campos do formulário após terem sido enviados
-    document.getElementById("user-create").reset();
+    document.getElementById("user-create-form").reset();
+
+    document.getElementById("user-image").setAttribute("src", "");
   }
 };
 
+// Pega o evento de submissão do formulário e chama a função userCreate
 document
   .getElementById("user-create-form")
   .addEventListener("submit", userCreate);
 
-// Adiciona preview da imagem referente a url adicionada no campo do formulário correspondente
+// Adiciona preview da imagem referente a url adicionada no campo do formulário correspondente e informa o usuário antes da submissão do formulário
 document.getElementById("user-photo").addEventListener("input", function () {
   document.getElementById("user-image").setAttribute("src", this.value);
 });
+
+// Verifica se a senha digitada tem entre 8 e 16 caracteres
+document
+  .getElementById("user-password")
+  .addEventListener("focusout", function () {
+    const userPassword = document.getElementById("user-password").value;
+    const validPassword =
+      userPassword.length >= 8 && userPassword.length <= 16
+        ? (document.getElementById("user-password-error").innerText = "")
+        : (document.getElementById("user-password-error").innerText =
+            "A senha deve conter entre 8 e 16 caracteres.");
+  });
+
+// Verifica se a senha digitada na confirmação é igual a senha digitada no campo senha e informa o usuário antes da submissão do formulário
+document
+  .getElementById("user-password-confirmation")
+  .addEventListener("focusout", function () {
+    const samePassword =
+      document.getElementById("user-password").value ===
+      document.getElementById("user-password-confirmation").value
+        ? (document.getElementById(
+            "user-password-confirmation-error"
+          ).innerText = "")
+        : (document.getElementById(
+            "user-password-confirmation-error"
+          ).innerText = "As senhas digitas são diferentes.");
+  });
+
+//Verifica se o campo de descrição possui no máximo 300 caracteres informa o usuário antes da submissão do formulário
+document
+  .getElementById("user-description")
+  .addEventListener("focusout", function () {
+    const descriptionLength =
+      document.getElementById("user-description").value.length;
+    const validDescription =
+      descriptionLength <= 300
+        ? (document.getElementById("user-description-error").innerText = "")
+        : (document.getElementById(
+            "user-description-error"
+          ).innerText = `A descrição pode ter no máximo 300 caracteres. Caracteres digitados: ${descriptionLength}`);
+  });
