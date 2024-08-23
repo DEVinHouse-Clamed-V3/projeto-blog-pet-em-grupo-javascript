@@ -13,6 +13,11 @@ O blog de pets visa criar uma plataforma onde os usuários possam compartilhar p
 - Tela de home de posts - [@henriquetorrescampos](https://github.com/henriquetorrescampos)
 - Tela de visualização de posts - [@frankberwald](https://github.com/frankberwald)
 
+## Tecnologias utilizadas
+- JavaScript
+- HTML5
+- CSS3
+
 ## Autores
 
 <div align="center">
