@@ -78,7 +78,6 @@ body {
   font-weight: bold;
 }
 
-
 .content {
   /* Calcula o quanto o conteúdo vai ocupar para reservar um espaço para o footer*/
   min-height: calc(100vh - 150px);
@@ -122,6 +121,11 @@ body {
   font-size: 16px;
 }
 
+.footer a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
 .footer-card a {
   display: inline-block;
   padding: 10px 20px;
@@ -132,17 +136,29 @@ body {
   margin-top: 6px;
 }
 
+
 /*#region*/ localStorage
 /*#endregion*/
 
-.all-posts {
+
+.posts-in-center {
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
+  justify-content: center;
 }
 
 .post-item {
-  max-width: 30%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  padding: 4px;
   background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.post-item span {
+  font-size: 1em;
+  color: #555;
+  margin-top: 3px;
 }

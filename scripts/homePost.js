@@ -4,8 +4,6 @@ function loadPosts() {
   const postList = document.getElementById("posts-in");
 
   postsLocalStorage.forEach((each_post) => {
-    console.log(each_post.titulo);
-
     const div = document.createElement("div");
     div.classList.add("post-item");
 
@@ -26,6 +24,7 @@ function loadPosts() {
     div.append(description);
 
     const currentePostDate = document.createElement("span");
+    currentePostDate.classList.add("post-date");
     currentePostDate.innerText = each_post.dataCriacao;
 
     div.append(currentePostDate);
