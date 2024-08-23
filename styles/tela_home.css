@@ -3,27 +3,20 @@ body {
   margin: 0;
   padding: 0;
 }
+/* #region*/ 
+/*#endregion */
 
-/*#region*/ tela-home 
-/*#endregion*/
-
-.container-post-header {
-  display: flex;
-}
-
-.container-post-header header {
+.content-header-container header {
   background-color: #10274a;
   display: flex;
   align-items: center;
   justify-content: space-between;
   color: #ffffff;
   font-size: 20px;
-  padding: 0 80px;
-  /* margin top, right, bot, left */
-  /* padding top,right bot, left */
+  padding: 20px 80px;
 }
 
-.container-post-header a {
+.content-header-container a {
   text-decoration: none;
   color: #ffffff;
 }
@@ -137,23 +130,21 @@ body {
 }
 
 
-/*#region*/ localStorage
-/*#endregion*/
-
-
-.posts-in-center {
+.posts-in {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  width: 100%;
   justify-content: center;
 }
 
 .post-item {
+  display: flex;
+  width: 30%;
+  flex-direction: column;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
   padding: 4px;
   background-color: #ffffff;
-  display: flex;
-  flex-direction: column;
 }
 
 
