@@ -4,8 +4,7 @@ body {
   padding: 0;
 }
 
-/*#region*/
-tela-home 
+/*#region*/ tela-home 
 /*#endregion*/
 
 .container-post-header {
@@ -131,4 +130,19 @@ tela-home
   text-decoration: none;
   border-radius: 5px;
   margin-top: 6px;
+}
+
+/*#region*/ localStorage
+/*#endregion*/
+
+.all-posts {
+  display: flex;
+  gap: 20px;
+}
+
+.post-item {
+  max-width: 30%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  background-color: #ffffff;
 }
