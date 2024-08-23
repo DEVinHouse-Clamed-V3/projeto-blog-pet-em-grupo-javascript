@@ -53,6 +53,7 @@ body {
   border: solid 2px #00234b;
   border-radius: 8px;
   max-height: 80vh;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
 }
 
 .user-create-container header {
@@ -140,12 +141,18 @@ textarea {
   font-weight: bold;
 }
 
+.validation-error {
+  padding: 2px 0 0 8px;
+  color: #ff1100;
+}
+
 .footer {
   position: relative;
   bottom: 0;
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #ffffff;
 }
 
 .footer-container {
