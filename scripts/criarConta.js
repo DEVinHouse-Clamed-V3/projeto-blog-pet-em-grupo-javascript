@@ -70,14 +70,15 @@ const userCreate = (event) => {
 
     // Pega os itens dos usuários no local storage, transforma de String para array e insere na localStorageList
     // Fazemos isso para recuperar o que já tem no localStorage, para não ficarmos zerando a lista
-    const localStorageList = JSON.parse(localStorage.getItem("users")) || [];
+    const localStorageList =
+      JSON.parse(localStorage.getItem("usersCreate")) || [];
 
     // Envia um objeto do tipo user que é o que estamos informando no momnento na tela, será enviado para o localStorageList
     localStorageList.push(user);
 
     // Salva no localStorage
     // JSON.stringify serve para transformar o objeto em String pois o local Storage só trabalha com String - NECESSÁRIO
-    localStorage.setItem("users", JSON.stringify(localStorageList));
+    localStorage.setItem("usersCreate", JSON.stringify(localStorageList));
 
     // Reseta os campos do formulário após terem sido enviados
     document.getElementById("user-create-form").reset();
