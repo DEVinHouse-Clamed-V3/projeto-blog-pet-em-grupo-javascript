@@ -1,6 +1,4 @@
-console.log("entra no script");
 const userCreate = (event) => {
-  console.log("Entrou na função");
   // Previne que a página seja recarregada
   event.preventDefault();
 
