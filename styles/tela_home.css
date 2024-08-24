@@ -3,117 +3,20 @@ body {
   margin: 0;
   padding: 0;
 }
+/* #region*/ 
+/*#endregion */
 
-h1 {
-  text-align: center;
-  color: #005f99;
-}
-
-.form-group {
-  margin-bottom: 15px;
-}
-
-.form-group label {
-  display: block;
-  color: #003366;
-  margin-bottom: 5px;
-}
-
-.form-group input,
-
-textarea,
-select {
-  width: 100%;
-  padding: 8px;
-  border: 1px solid #b3d1ff;
-  border-radius: 5px;
-  box-sizing: border-box;
-}
-
-.form-group button {
-  width: 100%;
-  padding: 10px;
-  background-color: #0073e6;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.form-group button:hover {
-  background-color: #005bb5;
-}
-
-
-
-.container {
-  background-color: #e6f2ff;
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin-top: 20px;
-  width: 90%;
-  max-width: 800px;
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
-}
-
-table,
-th,
-td {
-  border: 1px solid #b3d1ff;
-}
-
-th,
-td {
-  padding: 10px;
-  text-align: center;
-}
-
-th {
-  background-color: #0073e6;
-  color: white;
-}
-
-button.delete-btn {
-  background-color: #ff4d4d;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  padding: 5px 10px;
-  cursor: pointer;
-}
-
-button.delete-btn:hover {
-  background-color: #cc0000;
-} 
-
-
-/*#region*/
-tela-home 
-/*#endregion*/
-
-.container-post-header {
-  display: flex;
-}
-
-.container-post-header header {
+.content-header-container header {
   background-color: #10274a;
   display: flex;
   align-items: center;
   justify-content: space-between;
   color: #ffffff;
   font-size: 20px;
-  padding: 0 80px;
-  /* margin top, right, bot, left */
-  /* padding top,right bot, left */
+  padding: 20px 80px;
 }
 
-.container-post-header a {
+.content-header-container a {
   text-decoration: none;
   color: #ffffff;
 }
@@ -168,7 +71,6 @@ tela-home
   font-weight: bold;
 }
 
-
 .content {
   /* Calcula o quanto o conteúdo vai ocupar para reservar um espaço para o footer*/
   min-height: calc(100vh - 150px);
@@ -212,6 +114,11 @@ tela-home
   font-size: 16px;
 }
 
+.footer a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
 .footer-card a {
   display: inline-block;
   padding: 10px 20px;
@@ -220,4 +127,29 @@ tela-home
   text-decoration: none;
   border-radius: 5px;
   margin-top: 6px;
+}
+
+
+.posts-in {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+  justify-content: center;
+}
+
+.post-item {
+  display: flex;
+  width: 30%;
+  flex-direction: column;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  padding: 4px;
+  background-color: #ffffff;
+}
+
+
+.post-item span {
+  font-size: 1em;
+  color: #555;
+  margin-top: 3px;
 }

@@ -5,7 +5,7 @@ function cadastrarPost(event) {
     id: crypto.randomUUID(),
     titulo: document.getElementById("titulo").value,
     descricao: document.getElementById("descricao").value,
-    dataCriacao: new Date().toLocaleDateString(),
+    dataCriacao: new Date().toLocaleDateString("en-GB"),
     categoria: document.getElementById("categoria").value,
     foto: document.getElementById("foto").value,
   };
