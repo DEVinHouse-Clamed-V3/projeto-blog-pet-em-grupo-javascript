@@ -1,3 +1,8 @@
+*{
+    @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+    font-family: "Roboto", sans-serif;
+}
+
 .page {
     display: flex;
     flex-direction: column;
@@ -9,23 +14,40 @@
     background-color: #10274A;
 }
 
+.shadowForm{
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.4);
+}
+
 .formLogin {
     display: flex;
     flex-direction: column;
     background-color: #fff;
     border-radius: 3px;
-    padding: 40px;
-    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.4);
-    gap: 5px
+    gap: 10px
 }
+
+.paddingForm{
+    padding: 0px 30px 30px 30px;
+}
+
 
 
 .formLogin h1 {
     padding: 0;
     margin: 0;
-    font-weight: 500;
-    font-size: 2.3em;
-    
+    font-weight: bold;
+    font-size: 2.3em;  
+}
+
+.divh1{
+    text-align: center;
+    align-items: center;
+    background-color: #fff;
+    color: #10274A;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    border-radius: 3px;
     
 }
 
@@ -96,8 +118,5 @@
 }
 
 
-.divh1{
-    width: 100%;
-    background-color: red;
-}
+
 
