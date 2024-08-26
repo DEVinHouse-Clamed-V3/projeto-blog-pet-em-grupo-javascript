@@ -7,7 +7,6 @@
     <title>Tela Home Posts</title>
     <link rel="stylesheet" href="./styles/tela_home.css">
   </head>
-  <div class="content">
   <body>
     <div class="content-header-container">
       <header>
@@ -15,19 +14,17 @@
         <a href="./login.html">Login</a>
       </header>
     </div>
-
     <div class="container-post-nav">
-      <ul class="nav-items">
-        <li><a href="#">Cães</a></li>
-        <li><a href="#">Gatos</a></li>
-        <li><a href="#">Pássaros</a></li>
-        <li><a href="#">Diversos</a></li>
+      <ul>
+        <li><a class="nav-item" href>Cães</a></li>
+        <li><a class="nav-item" href>Gatos</a></li>
+        <li><a class="nav-item" href>Pássaros</a></li>
+        <li><a class="nav-item" href>Diversos</a></li>
+        <li><a class="nav-item" href="post.html">Ver Posts</a></li>
+        <li class="btn">
+          <a href="./listagem_post_admin.html">Seja Criador</a>
+        </li>
       </ul>
-      <a class="btn" href="./listagem_post_admin.html">Seja um escritor</a>
-    </div>
-
-    <div class="container-posts">
-      <p>Todos os Posts</p>
     </div>
     <div class="posts-in" id="posts-in"></div>
   </div>

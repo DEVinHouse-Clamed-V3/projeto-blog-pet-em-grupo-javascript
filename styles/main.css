@@ -94,7 +94,7 @@ button.delete-btn:hover {
 
 
 /*#region*/
-tela-home 
+tela-home
 /*#endregion*/
 
 .container-post-header {
@@ -175,7 +175,7 @@ tela-home
 }
 
 .footer {
-  position: relative;
+  position: fixed;
   bottom: 0;
   display: flex;
   align-items: center;
