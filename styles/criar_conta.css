@@ -25,6 +25,7 @@ body {
   align-items: center;
   justify-content: center;
   height: calc(91vh - 100px);
+  max-height: calc(91vh - 100px);
 }
 
 /* -- HEADER --  */
