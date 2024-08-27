@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tela Home Posts</title>
     <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="styles/home_post.css">
   </head>
-  <div class="content">
   <body>
     <div class="container-post-header">
       <header>
@@ -14,40 +14,18 @@
         <a href="./login.html">Login</a>
       </header>
     </div>
-
     <div class="container-post-nav">
-      <ul class="nav-items">
-        <li><a href="#">Cães</a></li>
-        <li><a href="#">Gatos</a></li>
-        <li><a href="#">Pássaros</a></li>
-        <li><a href="#">Diversos</a></li>
+      <ul>
+        <li><a class="nav-item" href>Cães</a></li>
+        <li><a class="nav-item" href>Gatos</a></li>
+        <li><a class="nav-item" href>Pássaros</a></li>
+        <li><a class="nav-item" href>Diversos</a></li>
+        <li><a class="nav-item" href="post.html">Ver Posts</a></li>
+        <li class="btn">
+          <a href="./listagem_post_admin.html">Seja Criador</a>
+        </li>
       </ul>
-      <a class="btn" href="./listagem_post_admin.html">Seja um escritor</a>
     </div>
-
-    <div class="container-posts">
-      <p>Todos os Posts</p>
-    </div>
-
-    <!-- <img />
-    <span></span>
-    <h2></h2>
-    <span></span>
-    <span></span> -->
-  </div>
-    <footer class="footer footer-container">
-      <!-- <span style="color: aliceblue">MATHEUS AQUI</span> -->
-      <div class="footer-card">
-        <h2>Já conhece a Refúgio Animal</h2>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae
-          eos porro similique facilis deleniti labore itaque architecto voluptas
-          corrupti doloribus, perferendis nesciunt illo earum assumenda dicta
-          molestias voluptates ipsam distinctio?
-        </p>
-        <a href="#">Visitar página</a>
-      </div>
-    </footer>
     <script type="module" src="./scripts/homePost.js"></script>
   </body>
 </html>

@@ -1,41 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/login.css" />
-    <title>Login</title>
-  </head>
-  <body>
-    <div class="page">
-      <form method="POST" class="formLogin">
-        <div class="divh1">
-          <h1>Login</h1>
-        </div>
-        <p>Digite os seus dados de acesso no campo abaixo.</p>
-        <label for="email">E-mail</label>
-        <input
-          type="email"
-          placeholder="Digite seu e-mail"
-          autofocus="true"
-          id="email"
-        />
-        <label for="password">Senha</label>
-        <input type="password" placeholder="Digite sua senha" id="password" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Login</title>
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport"
+                content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="styles/login.css">
+            <title>Login</title>
+        </head>
+        <body>
+            <div class="page">
 
-        <div class="formRow">
-          <a href="/">Esqueci minha senha</a>
-          <a href="/">Cadastre-se</a>
-        </div>
-        <input
-          type="submit"
-          value="Acessar"
-          class="btn"
-          onclick="acess(); return false"
-        />
-      </form>
-    </div>
+                <form method="POST" class="formLogin">
+                    <h1>Login</h1>
+                    <p>Digite os seus dados de acesso no campo abaixo.</p>
+                    <label for="email">E-mail</label>
+                    <input type="email" placeholder="Digite seu e-mail"
+                        autofocus="true" required />
+                    <label for="password">Senha</label>
+                    <input type="password" placeholder="Digite sua senha"
+                        required />
 
-    <script src="scripts/login.js"></script>
-  </body>
-</html>
+                    <div class="formRow">
+                        <a href="/">Esqueci minha senha</a>
+                        <a href="criar_conta.html">Cadastre-se</a>
+                    </div>
+                    <input type="submit" value="Acessar" class="btn" />
+                </form>
+            </div>
+        </body>
+    </html>
