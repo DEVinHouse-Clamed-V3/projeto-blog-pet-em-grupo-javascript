@@ -1,11 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/favico.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./styles/criar_conta.css" />
+    <title>Blog Pet | Cadastro Usuário</title>
+  </head>
+  <div class="content">
+    <body>
+      <div class="content-header-container">
+        <header>
+          <a href="./tela_home.html">Blog Pet</a>
+          <a href="./login.html"><button class="button-login">Login</button></a>
+        </header>
+      </div>
+    <div class="content-container">
+      <div class="user-create-container">
+        <header>
+          CRIAR CONTA
+        </header>
+              <div class="user-create">
+              <div class="user-image-container">
+                <img class="user-image" id="user-image"
+                    src=""
+                />
+              </div>
+              <form id="user-create-form">
+
+              <div class="input-container">
+                <label for="user-name">Nome<span class="required">*</span></label>
+                <input id="user-name" placeholder="Informe o nome" />
+                <span class="validation-error" id="user-name-error"></span>
+              </div>
+
+              <div class="input-container">
+                <label for="user-photo">Url da foto<span class="required">*</span></label>
+                <input type="url" id="user-photo" placeholder="Informe a url da sua foto"/>
+                <span class="validation-error" id="user-photo-error"></span>
+              </div>
+
+              <div class="input-container">
+                <label for="user-email">E-mail<span class="required">*</span></label>
+                <input type="email" id="user-email" placeholder="Informe um e-mail válido"/>
+                <span class="validation-error" id="user-email-error"></span>
+              </div>
+
+              <div class="input-container">
+                <label for="user-password">Senha<span class="required">*</span></label>
+                <input type="password" id="user-password" placeholder="Digite uma senha" />
+                <span class="validation-error" id="user-password-error"></span>
+              </div>
+
+              <div class="input-container">
+                <label for="user-password-confirmation">Confirme a senha<span class="required">*</span></label>
+                <input type="password" id="user-password-confirmation" placeholder="Digite novamente a sua senha" />
+                <span class="validation-error" id="user-password-confirmation-error"></span>
+              </div>
+              
+              <div class="input-container">
+                <label for="user-description">Descrição<span class="required">*</span></label>
+                <textarea type="text" id="user-description" placeholder="Informe uma pequena descrição"></textarea>
+                <span class="validation-error" id="user-description-error"></span>
+              </div>
+
+              <div class="button-container">
+                <button class="button-submit" type="submit">Cadastrar</button>
+              </div>
+
+            </form>
+          </div>
+      </div>
+    </div>
+  </div>
+
+
+  </div>
+    <footer class="footer footer-container">
+      <a href="https://github.com/DEVinHouse-Clamed-V3/projeto-blog-pet-em-grupo-javascript"><p>Desenvolvido pela equipe JavaScript - CLAMED V3</p></a>
+    </footer>
+    <script src="./scripts/criarConta.js"></script>
+    </body>
 </html>
