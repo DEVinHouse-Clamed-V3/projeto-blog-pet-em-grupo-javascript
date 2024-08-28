@@ -4,17 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Novo Post</title>
-    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
-    <nav class="nav">
-      <ul>
-        <li><a href="cadastro_post.html">Criar Post</a></li>
-        <li><a href="listagem_post_admin.html">Listagem</a></li>
-      </ul>
-    </nav>
+    <nav class="navbar" role="navigation" aria-label="Main Navigation">
+      <div class="navbar-flex">
+        <img src="assets/favico.ico" alt="logo" />
 
-    <div class="container">
+        <div class="main-menu-items">
+          <ul class="main-menu-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="cadastro_post.html">Criar Post</a></li>
+            <li><a href="post.html">Ver Posts</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="spacing"></div>
+    <div class="container-flex-sm">
       <h1>Novo Post</h1>
       <form id="postForm">
         <div class="form-group">
@@ -28,8 +36,7 @@
             id="descricao"
             name="descricao"
             rows="4"
-            required
-          ></textarea>
+            required></textarea>
         </div>
 
         <div class="form-group">
@@ -47,9 +54,14 @@
           <input type="url" id="foto" name="foto" required />
         </div>
 
-        <button type="submit">Salvar Post</button>
+        <button type="submit" class="btn">Salvar Post</button>
       </form>
     </div>
+    <footer class="footer footer-container">
+      <a
+        href="https://github.com/DEVinHouse-Clamed-V3/projeto-blog-pet-em-grupo-javascript"><p>Desenvolvido
+          pela equipe JavaScript - CLAMED V3</p></a>
+    </footer>
     <script src="scripts/cadastro_post.js"></script>
   </body>
 </html>

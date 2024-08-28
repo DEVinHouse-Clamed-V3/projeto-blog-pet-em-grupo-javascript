@@ -1,41 +1,63 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./assets/favico.ico" type="image/x-icon" />
-     <link rel="stylesheet" href="styles/login.css">
-    <link rel="stylesheet" href="styles/normalize.css">
-    <title>Blog Pet | Login</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="./assets/favico.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <title>Blog Pet | Login</title>
+    </head>
 
-<body>
-    <div class="page">
-<div class="shadowForm">
-        <form method="POST" class="formLogin">
-            <div class="divh1">
-            <h1>LOGIN</h1>
-            </div>
-            <div class="paddingForm formLogin">
-                <p>Digite os seus dados de acesso no campo abaixo.</p>
-                <label for="email">E-mail</label>
-                <input type="email" placeholder="Digite seu e-mail" autofocus="true" id="email" />
-                <label for="password">Senha</label>
-                <input type="password" placeholder="Digite sua senha" id="password" />
+    <nav class="navbar" role="navigation" aria-label="Main Navigation">
+        <div class="navbar-flex">
+            <img src="assets/favico.ico" alt="logo" />
 
-                <div class="formRow">
-                    <a href="/">Esqueci minha senha</a>
-                    <a href="./criar_conta.html">Cadastre-se</a>
-                </div>
-
-                <input type="submit" value="ACESSAR" class="btn" onclick="acess(); return false" />
+            <div class="main-menu-items">
+                <ul class="main-menu-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="cadastro_post.html">Criar Post</a></li>
+                    <li><a href="post.html">Ver Posts</a></li>
+                </ul>
             </div>
         </div>
-        </form>
-    </div>
+    </nav>
 
-    <script src="scripts/login.js"></script>
-</body>
+    <body>
+        <div class="page">
+            <div class="shadowForm">
+                <form method="POST" class="formLogin">
+                    <div class="divh1">
+                        <h1>LOGIN</h1>
+                    </div>
+                    <div class="formLogin">
+                        <p>Digite os seus dados de acesso no campo abaixo.</p>
+                        <label for="email">E-mail</label>
+                        <input type="email" placeholder="Digite seu e-mail"
+                            autofocus="true" id="email" />
+                        <label for="password">Senha</label>
+                        <input type="password" placeholder="Digite sua senha"
+                            id="password" />
+
+                        <div class="formRow">
+                            <a href="/">Esqueci minha senha</a>
+                            <a href="./criar_conta.html">Cadastre-se</a>
+                        </div>
+
+                        <input type="submit" value="Login" class="btn"
+                            onclick="acess(); return false" />
+                    </div>
+                </div>
+            </form>
+        </div>
+        <footer class="footer footer-container">
+            <a
+                href="https://github.com/DEVinHouse-Clamed-V3/projeto-blog-pet-em-grupo-javascript"><p>Desenvolvido
+                    pela equipe JavaScript - CLAMED V3</p></a>
+        </footer>
+        <script src="scripts/login.js"></script>
+    </body>
 
 </html>

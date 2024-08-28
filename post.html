@@ -5,26 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Posts do blog</title>
     <link rel="icon" href="./assets/favico.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/criar_conta.css">
-    <link rel="stylesheet" href="styles/home_post.css">
+    <link rel="stylesheet" href="styles/style.css">
   </head>
   <body>
 
-    <div class="container-post-header">
-      <header>
-        <p><a href="index.html">Pet Blog</a></p>
-        <a href="./login.html">Login</a>
-      </header>
-    </div>
-    <div class="container-post-nav">
-      <ul>
-        <li><a class="nav-item" href="index.html">Home</a></li>
-        <li><a class="nav-item" href="cadastro_post.html">Cadastrar
-            Post</a></li>
-        <li><a class="nav-item" href="criar_conta.html">Criar Conta</a></li>
-      </ul>
-    </div>
+    <nav class="navbar" role="navigation" aria-label="Main Navigation">
+      <div class="navbar-flex">
+        <img src="assets/favico.ico" alt="logo" />
+
+        <div class="main-menu-items">
+          <ul class="main-menu-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="cadastro_post.html">Criar Post</a></li>
+            <li><a href="post.html">Ver Posts</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="spacing"></div>
 
     <div id="output-container" class="flex-container">
       <div class="demo">
