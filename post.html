@@ -1,12 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    
-</head>
-<body>
-    
-</body>
+    <title>Posts do blog</title>
+    <link rel="icon" href="./assets/favico.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/criar_conta.css">
+    <link rel="stylesheet" href="styles/home_post.css">
+  </head>
+  <body>
+
+    <div class="container-post-header">
+      <header>
+        <p><a href="index.html">Pet Blog</a></p>
+        <a href="./login.html">Login</a>
+      </header>
+    </div>
+    <div class="container-post-nav">
+      <ul>
+        <li><a class="nav-item" href="index.html">Home</a></li>
+        <li><a class="nav-item" href="cadastro_post.html">Cadastrar
+            Post</a></li>
+        <li><a class="nav-item" href="criar_conta.html">Criar Conta</a></li>
+      </ul>
+    </div>
+
+    <div id="output-container" class="flex-container">
+      <div class="demo">
+        <img src="assets/confira.jpg" alt>
+        <p>Confira nossos posts mais recentes! Clique no botão abaixo para
+          mostrar.</p>
+      </div>
+      <button id="generate-button" class="btn">Exibir Posts</button>
+    </div>
+  </div>
+  <footer class="footer footer-container">
+    <a href="https://github.com/DEVinHouse-Clamed-V3/projeto-blog-pet-em-grupo-javascript"><p>Desenvolvido pela equipe JavaScript - CLAMED V3</p></a>
+  </footer>
+    <script src="scripts/viewPost.js"></script>
+  </body>
 </html>
+
+
